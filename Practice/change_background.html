@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <select name="" id="">
+            <option id="red" onclick="redfunc()">red</option>
+            <option id="green" onclick="greenfunc()">green</option>
+            <option id="yellow" onclick="yellowfunc()">yellow</option>
+            <option id="grey" onclick="greyfunc()">grey</option>
+            <option id="black" onclick="blackfunc()">black</option>
+        </select>
+    </div>
+    <script>
+        let red = document.getElementById("red");
+        let green = document.getElementById("green");
+        let yellow = document.getElementById("yellow");
+        let grey = document.getElementById("grey");
+        let black = document.getElementById("black");
+
+        function redfunc() {
+            document.body.style.backgroundColor = "red"
+        }
+        function greenfunc() {
+            document.body.style.backgroundColor = "green"
+        }
+        function yellowfunc() {
+            document.body.style.backgroundColor = "yellow"
+        }
+        function greyfunc() {
+            document.body.style.backgroundColor = "grey"
+        }
+        function blackfunc() {
+            document.body.style.backgroundColor = "black"
+        }
+
+
+    </script>
+</body>
+
+</html>

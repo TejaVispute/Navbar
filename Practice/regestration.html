@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Roboto+Mono:ital,wght@1,300&display=swap');
+
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        /* border: 1px solid red; */
+    }
+
+    *:focus {
+        outline: none;
+    }
+
+    .container {
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #4170f4;
+    }
+
+    .box {
+        height: 70%;
+        width: 30%;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 1rem;
+        padding: 2rem;
+
+    }
+
+    .inputs {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+
+    }
+
+    .info {
+        width: 100%;
+        padding: 10px;
+        background: transparent;
+        border: 0px;
+        font-size: 1rem;
+        margin-left: 2rem;
+        /* color: red; */
+    }
+
+    .inputs>div {
+        border-bottom: 1px solid grey;
+    }
+
+    .inputs>div i {
+        position: relative;
+        top: 2.3rem;
+        left: 10px;
+        font-size: 1.5rem;
+    }
+
+    button {
+        background-color: #4170f4;
+        width: 100%;
+        padding: 10px;
+        color: white;
+        font-size: 1.3rem;
+        border-radius: 8px;
+        border: none;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <h2>Registration</h2>
+            <div class="inputs">
+                <div>
+                    <i class="fa-regular fa-user"></i> <input placeholder="Enter your name " class="info" type="text">
+                </div>
+                <div>
+                    <i class="fa-regular fa-envelope"></i> <input placeholder="Enter your Email" class="info"
+                        type="text">
+                </div>
+                <div>
+                    <i class="fa-solid fa-lock"></i> <input placeholder="Create a password" class="info" type="text">
+                </div>
+                <div>
+                    <i class="fa-solid fa-lock"></i> <input placeholder="Confirm a password" class="info" type="text">
+                </div>
+                <div style="border: none; margin-top: 10px;">
+                    <input type="checkbox"> i accept all the terms and conditions
+                </div>
+                <div style="border: none; margin-top: 10px;">
+                    <button>Register Now</button>
+                </div>
+                <div style="border: none; margin-top: 10px;"> alerady have an account ? <a href="">Login Now</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
